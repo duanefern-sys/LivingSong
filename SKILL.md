@@ -63,6 +63,17 @@ Leave the rest on the floor. A song with three vivid details is better than a so
 2C — Caution: Generic Religious Language
 Do not import standard funeral-home religious phrases such as 'in God's arms now,' 'heaven's gates,' 'the Lord called them home,' or 'angels above' unless the family's intake responses demonstrate this is their actual language. Generic religious imagery applied without the family's evidence of that faith tradition will feel false to those who know the person.
 If faith is present in the intake, use the specific language and scripture the family provided. If faith is absent or unclear, write toward peace, love, and legacy — these are universal. When in doubt, understate theology and overstate the person.
+### 2D — Anti-Pattern Check (Generic AI-Song Language)
+
+Before drafting, hold this in mind. This is not a faith-language issue (that's 2C) — it's a **specificity** issue. These are the words, phrases, and rhyme pairs that show up in every generic tribute song ever written. Their presence signals that the lyric has drifted from this person toward no one in particular.
+
+**Avoid as crutches:** journey, legacy (as a lyric word, not a category label), forever in our hearts, gone but not forgotten, shining down, watching over, couldn't stay, God needed an angel, spread your wings. These phrases have been used so many times they carry no emotional weight. Any of them in a lyric is a warning sign.
+
+**Avoid these as automatic rhyme pairs:** heart/apart, gone/on, light/night, love/above, away/stay, forever/together. Reaching for these defaults almost always means the image is too vague. If a rhyme pair has become automatic, the underlying lyric idea needs more specificity before the rhyme is chosen.
+
+**What to do instead:** Every time a generic phrase tempts you, ask what the **specific** version of that sentiment is in the intake. "Forever in our hearts" becomes whatever physical, sensory, or habitual detail the family actually gave you. If no specific replacement exists in the intake, note it and ask — don't fill the gap with a cliché.
+
+
 
 
 Step 3 — Choose the Song Structure
@@ -244,7 +255,13 @@ Voice fragment used: If a personal quote or expression was woven in, name it her
 Voice: Who is singing, and to whom
 Genre fit: The musical style this was written for
 Tempo guidance: Suggested BPM range and feel (slow ballad / mid-tempo / uptempo)
-Suno/music platform prompt suggestion: A brief style description (tempo, instruments, mood) the user can paste into Suno or a similar platform
+**Suno/music platform prompt suggestion**: Build this as three separate, clearly labeled fields — Suno's box structure expects them separately, and mixing them into one block degrades output quality.
+
+**Style Box** (4–7 core descriptors, structured as Genre → Mood → Instruments → Vocals): Lead with the genre, written in caps (e.g., `COUNTRY/AMERICANA BALLAD`). Keep mood, instrument, and vocal descriptors lowercase. Use periods, not commas, to separate distinct conceptual chunks. Commas read as "optional"; stacking 10–15 comma-separated descriptors confuses Suno. Example: `COUNTRY/AMERICANA BALLAD. Close-miked acoustic guitar, warm upright bass. Intimate male vocal, voice-forward mix.` For acoustic realism, use physical studio language (close-miked, tape saturation, room tone, fret noise, breath between phrases). For lyric-dense, name-heavy memorial songs where every detail must be intelligible, add the phrase "Broadway musical clarity" to prioritize diction.
+
+**Exclude Box** (separate from the Style Box): List unwanted elements as bare nouns, not negated phrases — write "orchestra, electric guitar" not "no orchestra, no electric guitar." Keep it short; 3–5 items maximum.
+
+**Lyrics Box structure tags**: Use bracketed meta-tags inline with the lyrics themselves to control arrangement — the style box cannot do this. Standard tags: `[Short Instrumental Intro]`, `[Verse]`, `[Chorus]`, `[End]` (forces a clean finish rather than a fade or cutoff). To give a specific instruction to one section only, pipe it inside the tag: `[Bridge | strings enter softly]`. Text in `(parentheses)` renders as backing vocal/harmony — useful sparingly for an "Outro" where a single repeated word or name should float under the final line.
 
 
 Step 7 — Quality Check
